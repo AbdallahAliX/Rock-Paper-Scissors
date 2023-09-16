@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: arial;
+}
+.game-title{
+  font-size: 30px;
+  padding-bottom: 20px;
+  font-weight: 700;
+
+}
+
+.game-buttons{
+  margin-right: 5px;
+  border-radius: 100px;
+  padding: 30px;
+  background-color: rgb(25, 25, 25) ;
+  border-color: white;
+  border-style: solid;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.moves-emojies{
+  width: 50px;
+  
+}
+
+.reset-button{
+  padding:10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.JS-result{
+  font-size: 20px;
+  padding-bottom: 20px ;
+  font-weight: 700;
+}
+
+.JS-moves{
+  margin-bottom: 30px;
+
+}
