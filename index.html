@@ -6,41 +6,46 @@
   <link rel="stylesheet" href="Rock-Paper-Scissors.css">
 </head>
 
-<body>
-  <p class="game-title">Rock Paper Scissors</p>
-  <button onclick="
-      playGame('Rock');
-  " class="game-buttons">
-  <img src="rock-emoji.png" class="moves-emojies">  
-  </button>
+<body >
+  <div class="container">
+    <p class="game-title">Rock Paper Scissors</p>
+    <div class="buttons-layout">
+      <button onclick="
+        playGame('Rock');
+        " class="game-buttons">
+      <img src="rock-emoji.png" class="moves-emojies">  
+      </button>
 
-  <button onclick="
-      playGame('Paper');
-  " class="game-buttons">
-  <img src="paper-emoji.png" class="moves-emojies">
-  </button>
+      <button onclick="
+          playGame('Paper');
+        " class="game-buttons">
+      <img src="paper-emoji.png" class="moves-emojies">
+      </button>
 
-  <button onclick="
-      playGame('Scissors');
-  " class="game-buttons">
-  <img src="scissors-emoji.png" class="moves-emojies">
-  </button>
-  
-  <p class="JS-result"></p> 
-  <p class="JS-moves"></p>
-  <p class="JS-score"></p>
+      <button onclick="
+          playGame('Scissors');
+        " class="game-buttons">
+      <img src="scissors-emoji.png" class="moves-emojies">
+      </button>
+    </div>
+    
+    
+    <p class="JS-result"></p> 
+    <p class="JS-moves"></p>
+    <p class="JS-score"></p>
 
 
-  <button onclick="
-  score.Wins = 0;
-  score.Losses = 0;
-  score.Ties = 0;
-  localStorage.removeItem('score');
-  scoreUpdateElement();
-  document.querySelector('.JS-result').innerHTML = '';
-  document.querySelector('.JS-moves').innerHTML = ``;
-  " class="reset-button">
-  Reset Score</button>
+    <button onclick="
+    score.Wins = 0;
+    score.Losses = 0;
+    score.Ties = 0;
+    localStorage.removeItem('score');
+    scoreUpdateElement();
+    document.querySelector('.JS-result').innerHTML = '';
+    document.querySelector('.JS-moves').innerHTML = ``;
+    " class="reset-button">
+    Reset Score</button>
+  </div>
 
 
 
